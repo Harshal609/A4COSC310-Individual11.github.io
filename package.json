@@ -1,5 +1,5 @@
 {
-  "name": "a3cosc310-team11.github.io",
+  "name": "a4cosc310-individual11.github.io",
   "version": "1.0.0",
   "description": "Using the power of our chat engine you can simulate talking to a Astronaut!",
   "main": "server.js",
@@ -9,15 +9,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/COSC-310-team-11/A3COSC310-Team11.github.io.git"
+    "url": "git+https://github.com/Harshal609/A4COSC310-Individual11.github.io.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/COSC-310-team-11/A3COSC310-Team11.github.io/issues"
+    "url": "https://github.com/Harshal609/A4COSC310-Individual11.github.io/issues"
   },
-  "homepage": "https://github.com/COSC-310-team-11/A3COSC310-Team11.github.io#readme",
+  "homepage": "https://github.com/Harshal609/A4COSC310-Individual11.github.io#readme",
   "dependencies": {
+    "axios": "^0.26.1",
+    "bing-translate-api": "^2.5.0",
     "express": "^4.17.3",
     "natural": "^5.1.13",
     "sentiment": "^5.0.2"

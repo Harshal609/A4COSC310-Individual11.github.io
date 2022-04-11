@@ -1,18 +1,54 @@
 const express = require('express');
 const getResponse = require('./getResponse');
+const wiki = require('./wiki');
 const server = express();
-
 server.use(express.json());
 server.use(express.urlencoded({extended: true}));
 
 server.use('/', express.static('site'));
 
-server.post('/api/', (req, res) => {
+server.post('/api/', async (req, res) => {
+
     const input = req.body.input;
     console.log('input: ', input);
     const output = getResponse(input);
     console.log('output: ', output);
-    res.json({output: output});
+
+    const { translate } = require('bing-translate-api');
+
+    if( wiki.is_question(input)){
+       wiki.wikiString(wiki.subject(input)).then(resss =>{
+        const  wikiOutput = resss;
+        translate(wikiOutput, null, 'fr', true).then(ress => {
+            
+            console.log(ress.translation);
+            const frOutput = ress.translation;
+            
+            
+            res.json({output: wikiOutput, frOutput: frOutput});
+
+        }).catch(err => {
+            console.error(err);
+        });
+       }).catch(errr => {
+            console.error(errr);
+       });
+
+    }else{
+
+        translate(output, null, 'fr', true).then(ress => {
+            
+            console.log(ress.translation);
+            const frOutput = ress.translation;
+            
+            
+            res.json({output: output, frOutput: frOutput});
+
+        }).catch(err => {
+            console.error(err);
+        });
+
+    }
 });
 
 server.get('/api/idea', (req, res) => {
