@@ -51,7 +51,7 @@ You must have `npm` and `nodejs` installed on your system. https://nodejs.org/en
 
 clone the project
 ```
-git clone https://github.com/COSC-310-team-11/A3COSC310-Team11.github.io
+git clone https://github.com/Harshal609/A4COSC310-Individual11.github.io
 ````
 
 install all the npm dependencies
