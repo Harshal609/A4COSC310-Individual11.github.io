@@ -23,7 +23,7 @@ Sentiment Analysis allows the bot to determine if a user’s input has a friendl
 Example of Improvement:
 Previously, the bot would have the same responses for input that is extremely friendly or offensive like a robot that couldn’t recognize emotion in human speech. Now that the bot responds more naturally to sentimental input, it feels a lot more realistic and human (despite being a bot).
 
-![Logo](https://imgur.com/a/XR63iiH.png)
+![Logo](https://imgur.com/a/XR63iiH)
 
 Wikipedia API:
 
@@ -31,7 +31,7 @@ Sentiment Analysis allows the bot to determine if a user’s input has a friendl
 Example of Improvement:
 Previously, the bot would have the same responses for input that is extremely friendly or offensive like a robot that couldn’t recognize emotion in human speech. Now that the bot responds more naturally to sentimental input, it feels a lot more realistic and human (despite being a bot).
 
-![Logo](https://imgur.com/a/GnMH3sv.png)
+![Logo](https://imgur.com/a/GnMH3sv)
 
 
 
